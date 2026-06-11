@@ -39,7 +39,7 @@ content:
                 label: 詳細（省略可）
                 type: string
           - name: career
-            label: 経歴
+            label: 内容
             type: string
           - name: substack_url
             label: SubstackリンクURL
