@@ -45,7 +45,8 @@
             <h2 class="section-title">Latest Insights<span class="sub">最新の予測・考察</span></h2>
             
             <div class="article-grid">
-                {% for article in site.data.articles %}
+                {% assign sorted_articles = site.data.articles | sort: 'date' | reverse %}
+                {% for article in sorted_articles %}
                 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     <article class="card">
                         <div class="card-img-placeholder">
