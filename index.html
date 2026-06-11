@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="建築士のための未来予測メディア。都市計画、ゲーム理論、宇宙論の交差点から次世代の建築のあり方を読み解く。">
-    <meta property="og:title" content="ARCHI-FUTURE | 建築士のための未来予測メディア">
+    <meta property="og:title" content="{{ site.data.site.hero.title_en }} | 建築士のための未来予測メディア">
     <meta property="og:description" content="都市計画、ゲーム理論、宇宙論の交差点から次世代の建築のあり方を読み解く。">
     <meta property="og:image" content="hero_space_arch.png">
-    <title>ARCHI-FUTURE | 建築士のための未来予測メディア</title>
+    <title>{{ site.data.site.hero.title_en }} | 建築士のための未来予測メディア</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,7 @@
 
 <body>
     <header class="header">
-        <div class="logo">ARCHI-FUTURE</div>
+        <div class="logo">{{ site.data.site.hero.title_en }}</div>
         <nav class="nav">
             <ul>
                 <li><a href="#latest">Articles</a></li>
@@ -33,8 +35,8 @@
             <img src="hero_space_arch.png" alt="Futuristic Space Architecture" class="hero-image">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="en">ARCHI-FUTURE</span>
-                    <span class="ja">建築とテクノロジーの交差点から、<br>「都市を森に変える」未来を予測する。</span>
+                    <span class="en">{{ site.data.site.hero.title_en }}</span>
+                    <span class="ja">{{ site.data.site.hero.title_ja }}</span>
                 </h1>
             </div>
         </section>
@@ -43,65 +45,30 @@
             <h2 class="section-title">Latest Insights<span class="sub">最新の予測・考察</span></h2>
             
             <div class="article-grid">
-                <!-- Article 1 -->
-                <a href="https://note.com/phity_2" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                {% for article in site.data.articles %}
+                <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     <article class="card">
                         <div class="card-img-placeholder">
-                            <img src="card_space_city.png" alt="Space City Grid" class="card-img">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="category-chip">木造建築2.0</span>
-                                <span class="date">2026.05.14</span>
-                            </div>
-                            <h3 class="card-title">【大分編】スギの産地が「都市建築の輸出拠点」へ変わる日——木造建築2.0の実装レポート</h3>
-                            <p class="card-excerpt">
-                                地方のポテンシャルは、都市の景観を、そして私たちの文明の形を確実に書き換え始めています。大分から始まったこの「木造2.0」の波は、次はどの地域へ向かうのか。
-                            </p>
-                            <span class="read-more">Read More</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Article 2 -->
-                <a href="https://note.com/phity_2" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                    <article class="card">
-                        <div class="card-img-placeholder">
-                            <img src="card_space_structure.png" alt="Futuristic Structure" class="card-img">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-meta">
-                                <span class="category-chip">ハイブリッドリゾナンス</span>
-                                <span class="date">2026.05.06</span>
-                            </div>
-                            <h3 class="card-title">超高層の「3時間耐火」に騙されるな。中小建設業が狙うべきは「低層・高密度アライアンス」だ</h3>
-                            <p class="card-excerpt">
-                                「木造化は高い」「法規制が厳しい」。多くの実務者が直面する壁を、デジタル技術とアライアンスの力で突破するための実践戦略。
-                            </p>
-                            <span class="read-more">Read More</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Article 3 (No specific image, uses fallback or just color) -->
-                <a href="https://note.com/phity_2" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                    <article class="card">
-                        <div class="card-img-placeholder">
+                            {% if article.image and article.image != "" %}
+                            <img src="{{ article.image }}" alt="{{ article.title }}" class="card-img">
+                            {% else %}
                             <div style="width:100%; height:100%; background: linear-gradient(45deg, #050a15, #003344);"></div>
+                            {% endif %}
                         </div>
                         <div class="card-content">
                             <div class="card-meta">
-                                <span class="category-chip">BIMとメンテナンス</span>
-                                <span class="date">2026.04.30</span>
+                                <span class="category-chip">{{ article.category }}</span>
+                                <span class="date">{{ article.date }}</span>
                             </div>
-                            <h3 class="card-title">【実装編：第6回】建物は「完成後」に真価が決まる。BIMをOSとして動かす次世代メンテナンス戦略</h3>
+                            <h3 class="card-title">{{ article.title }}</h3>
                             <p class="card-excerpt">
-                                建物というハードウェアに、いかにBIMというOSを組み込み、長期的な資産価値と炭素固定量を持続させるかを考察する。
+                                {{ article.excerpt }}
                             </p>
                             <span class="read-more">Read More</span>
                         </div>
                     </article>
                 </a>
+                {% endfor %}
             </div>
         </section>
 
@@ -110,32 +77,31 @@
             <h2 class="section-title">Profile<span class="sub">筆者について</span></h2>
             <div class="profile-content">
                 <p class="profile-bio">
-                    未来研究家。リスク構造分析の視点から「AI時代の建築家・クリエイターの生存戦略」を提案しています。
+                    {{ site.data.site.profile.bio }}
                 </p>
                 <div class="profile-themes">
                     <h3>■ 主な発信テーマ</h3>
                     <ul>
-                        <li><strong>『木造建築2.0』：</strong>CLTやハイブリッド構造で「都市を森に変える」挑戦</li>
-                        <li><strong>AI文明化とこれからの建築・都市予測</strong></li>
+                        {% for theme in site.data.site.profile.themes %}
+                        <li><strong>{{ theme.title }}</strong>{% if theme.description != "" %}：{{ theme.description }}{% endif %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <p class="profile-career">
-                    <strong>経歴：</strong>竹中技術研究所、プリンストン大学、国家公務員を経て現職。
+                    <strong>経歴：</strong>{{ site.data.site.profile.career }}
                 </p>
                 <div style="margin-top: 2rem; text-align: center;">
-                    <a href="https://phitouc.substack.com/" target="_blank" rel="noopener noreferrer" class="substack-btn">
+                    <a href="{{ site.data.site.profile.substack_url }}" target="_blank" rel="noopener noreferrer" class="substack-btn">
                         より深い思考の原液はこちら ── <span>Substack</span>
                     </a>
                 </div>
             </div>
         </section>
 
-
-
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 ARCHI-FUTURE. All Rights Reserved.</p>
+        <p>&copy; 2026 {{ site.data.site.hero.title_en }}. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

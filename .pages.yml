@@ -1,0 +1,71 @@
+media:
+  - name: images
+    label: 画像ファイル
+    input: ""
+    output: ""
+
+content:
+  - name: site
+    label: サイト基本設定
+    type: file
+    path: _data/site.yml
+    fields:
+      - name: hero
+        label: ヒーローセクション
+        type: object
+        fields:
+          - name: title_en
+            label: 英語タイトル
+            type: string
+          - name: title_ja
+            label: 日本語タイトル（<br>で改行）
+            type: text
+      - name: profile
+        label: プロフィール
+        type: object
+        fields:
+          - name: bio
+            label: 概要 (Bio)
+            type: text
+          - name: themes
+            label: 主な発信テーマ
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: テーマ名
+                type: string
+              - name: description
+                label: 詳細（省略可）
+                type: string
+          - name: career
+            label: 経歴
+            type: string
+          - name: substack_url
+            label: SubstackリンクURL
+            type: string
+
+  - name: articles
+    label: 記事リスト
+    type: file
+    path: _data/articles.yml
+    list: true
+    fields:
+      - name: title
+        label: 記事タイトル
+        type: string
+      - name: url
+        label: リンクURL
+        type: string
+      - name: image
+        label: サムネイル画像（ファイル名、空の場合はグラデーション）
+        type: image
+      - name: category
+        label: カテゴリ
+        type: string
+      - name: date
+        label: 日付
+        type: string
+      - name: excerpt
+        label: 抜粋文
+        type: text

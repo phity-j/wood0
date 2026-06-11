@@ -1,0 +1,12 @@
+hero:
+  title_en: ARCHI-FUTURE
+  title_ja: 建築とテクノロジーの交差点から、<br>「都市を森に変える」未来を予測する。
+profile:
+  bio: 未来研究家。リスク構造分析の視点から「AI時代の建築家・クリエイターの生存戦略」を提案しています。
+  themes:
+    - title: 『木造建築2.0』
+      description: CLTやハイブリッド構造で「都市を森に変える」挑戦
+    - title: AI文明化とこれからの建築・都市予測
+      description: ''
+  career: 竹中技術研究所、プリンストン大学、国家公務員を経て現職。
+  substack_url: https://phitouc.substack.com/
