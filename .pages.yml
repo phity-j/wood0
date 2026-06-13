@@ -45,27 +45,36 @@ content:
             label: SubstackリンクURL
             type: string
 
-  - name: articles
-    label: 記事リスト
-    type: file
-    path: _data/articles.yml
-    list: true
+  - name: posts
+    label: 記事 (Posts)
+    type: collection
+    path: _posts
+    view:
+      fields:
+        - title
+        - date
+        - category
     fields:
       - name: title
-        label: 記事タイトル
+        label: タイトル
         type: string
-      - name: url
-        label: リンクURL
-        type: string
-      - name: image
-        label: サムネイル画像（ファイル名、空の場合はグラデーション）
-        type: image
-      - name: category
-        label: カテゴリ
-        type: string
+        required: true
       - name: date
         label: 日付
+        type: date
+        required: true
+      - name: description
+        label: 概要 (Description)
         type: string
-      - name: excerpt
-        label: 抜粋文
-        type: text
+      - name: thumbnail
+        label: サムネイル画像
+        type: image
+      - name: category
+        label: カテゴリー
+        type: string
+      - name: author
+        label: 著者
+        type: string
+      - name: body
+        label: 本文
+        type: rich-text

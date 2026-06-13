@@ -45,25 +45,24 @@
             <h2 class="section-title">Latest Insights<span class="sub">最新の予測・考察</span></h2>
             
             <div class="article-grid">
-                {% assign sorted_articles = site.data.articles | sort: 'date' | reverse %}
-                {% for article in sorted_articles %}
-                <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                {% for post in site.posts %}
+                <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none;">
                     <article class="card">
                         <div class="card-img-placeholder">
-                            {% if article.image and article.image != "" %}
-                            <img src="{{ article.image }}" alt="{{ article.title }}" class="card-img">
+                            {% if post.thumbnail and post.thumbnail != "" %}
+                            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="card-img">
                             {% else %}
                             <div style="width:100%; height:100%; background: linear-gradient(45deg, #050a15, #003344);"></div>
                             {% endif %}
                         </div>
                         <div class="card-content">
                             <div class="card-meta">
-                                <span class="category-chip">{{ article.category }}</span>
-                                <span class="date">{{ article.date | date: "%Y.%m.%d" }}</span>
+                                <span class="category-chip">{{ post.category }}</span>
+                                <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </div>
-                            <h3 class="card-title">{{ article.title }}</h3>
+                            <h3 class="card-title">{{ post.title }}</h3>
                             <p class="card-excerpt">
-                                {{ article.excerpt }}
+                                {{ post.description }}
                             </p>
                             <span class="read-more">Read More</span>
                         </div>
