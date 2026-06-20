@@ -1,8 +1,8 @@
 media:
   - name: images
     label: 画像ファイル
-    input: ""
-    output: ""
+    input: "images"
+    output: "images"
 content:
   - name: site
     label: サイト基本設定
