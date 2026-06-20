@@ -1,5 +1,6 @@
 timezone: Asia/Tokyo
 future: true
+permalink: /posts/:year/:month/:day/:title/
 
 defaults:
   - scope:
