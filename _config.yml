@@ -1,0 +1,9 @@
+timezone: Asia/Tokyo
+future: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
