@@ -2,6 +2,7 @@
 title: 設計のアルゴリズムを「人間が書く」から「AIが進化させる」へ——菊竹清訓思想とNovelty Searchの構造的共鳴
 date: 2026-06-27
 description: 設計のアルゴリズムを「人間が書く」から「AIが進化させる」へ——菊竹清訓思想とNovelty Searchの構造的共鳴
+thumbnail: 442.png
 category: wooden_architecture
 author: フィティ
 ---
