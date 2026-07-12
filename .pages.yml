@@ -47,6 +47,7 @@ content:
     label: 記事 (Posts)
     type: collection
     path: _posts
+    filename: "{year}-{month}-{day}-{slug}"
     view:
       fields:
         - title
@@ -55,6 +56,10 @@ content:
     fields:
       - name: title
         label: タイトル
+        type: string
+        required: true
+      - name: slug
+        label: URLスラッグ（英語・ハイフンのみ）
         type: string
         required: true
       - name: date
