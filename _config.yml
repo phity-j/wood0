@@ -1,3 +1,20 @@
+url: "https://phity-j.github.io"
+baseurl: "/wood0"
+
+plugins:
+  - jekyll-sitemap
+
+timezone: Asia/Tokyo
+future: true
+permalink: /posts/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      
 timezone: Asia/Tokyo
 future: true
 permalink: /posts/:year/:month/:day/:title/
