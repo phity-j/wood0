@@ -58,7 +58,7 @@ content:
         label: タイトル
         type: string
         required: true
-      - name: slug
+      - name:filename: "{year}-{month}-{day}-{fields.slug}" slug
         label: URLスラッグ（英語・ハイフンのみ）
         type: string
         required: true
