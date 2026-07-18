@@ -43,7 +43,7 @@ author: フィティ
 
 Torch Towerの実証実験は、建設業界全体の「施工管理OS」をめぐる競争の始まりとも言える動きです。この技術がどのようなビジネスモデル・プラットフォーム競争を生み出しつつあるのか、そして木造建築の未来にどうつながるのかについては、有料マガジンでさらに詳しく解説しています。
 
-👉 [Substack「AI時代の建築家の生き方」で詳しく読む](https://phitouc.substack.com/p/ai2torch-tower)
+👉 [Substackで詳しく読む](https://phitouc.substack.com/p/ai2torch-tower)
 
 ---
 
