@@ -67,6 +67,6 @@ BIMで寸法を精密に詰め、プレカット精度を上げ、金物工法�
 
 **関連記事**
 
-- [CLTと中高層木造建築の設計基礎](https://phity-j.github.io/wood0/clt-basics/)※実際のスラッグに合わせて調整してください
-- [木鉄ハイブリッド構造における耐火被覆の考え方](https://phity-j.github.io/wood0/hybrid-fireproofing/)※実際のスラッグに合わせて調整してください
+- [建設現場を完全自律化するフィジカルAI：5つの技術ブレイクスルーと実装プロセス | ARCHI-FUTURE](https://phity-j.github.io/wood0/posts/2026/07/15/ai5.md/)
+- [建築という仕事は、AIによってどう変わっていくのか | ARCHI-FUTURE](https://phity-j.github.io/wood0/posts/2026/06/19/ai/)
 
