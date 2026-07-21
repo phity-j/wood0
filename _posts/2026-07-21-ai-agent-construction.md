@@ -39,10 +39,12 @@ author: フィティ
 
 木造建築・CLTの領域でも、同様の「基盤争い」が今後起こる可能性があります。関連する考察もあわせてご覧ください。
 
-- 関連記事：[ARCHI-FUTURE｜木造建築2.0が描く未来のものづくり](https://phity-j.github.io/wood0/)
-- 関連記事：[AI文明の生き方｜AIエコシステムと個人戦略シリーズ](https://phity.net/category/ai-civilization/)
+- 関連記事：[都市を一つの計算機として設計する——AIインフラ時代の建築システム思考 | ARCHI-FUTURE](https://phity-j.github.io/wood0/posts/2026/07/03/ai/)
+- 関連記事：[2035年、世界に100の「知能都市」が誕生する | FUTURE SYNTHESIS | 未来予測メディア](https://phity-j.github.io/future_synthesis/posts/2026/07/13/ai-city-data-center/)
 
 ---
+
+
 
 このシナリオの背景にある、清水建設とソニーの提携の技術的な詳細については、Substackの本編記事で解説しています。業界の構造変化をいち早く捉えたい方は、ぜひご一読ください。
 
